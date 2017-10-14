@@ -9,6 +9,7 @@
 <html>
 <head>
     <title>个人博客后台系统</title>
+    <%--<%@include file="../common/head.jspf"%>--%>
     <link href="../../static/jquery-easyui-1.5.3/themes/icon.css" rel="stylesheet" type="text/css">
     <link href="../../static/jquery-easyui-1.5.3/themes/default/easyui.css" rel="stylesheet" type="text/css">
 
@@ -20,7 +21,7 @@
             if ($('#tabs').tabs('exists', title)){
                 $('#tabs').tabs('select', title);
             } else {
-                var content = '<iframe scrolling="auto" frameborder="0"  src="'+url+'" style="width:100%;height:100%;"></iframe>';
+                var content = "<iframe frameborder=0 scrolling='auto' style='width:100%;height:100%' src='/admin/"+url+"'></iframe>";
                 $('#tabs').tabs('add',{
                     title:title,
                     content:content,
@@ -58,7 +59,7 @@
                    data-options="plain:true,iconCls:'icon-bkgl'" style="width: 150px;">博客信息管理</a>
             </div>
             <div title="博客类别管理" data-options="iconCls:'icon-bklb'" style="padding:10px">
-                <a href="#" class="easyui-linkbutton" onclick="addTab('博客类别信息管理','writeblog.jsp')"
+                <a href="#" class="easyui-linkbutton" onclick="addTab('博客类别信息管理','blogTypeManage.jsp')"
                    data-options="plain:true,iconCls:'icon-bklb'" style="width: 150px;">博客类别信息管理</a>
             </div>
             <div title="评论管理" data-options="iconCls:'icon-plgl'" style="padding:10px">

@@ -5,6 +5,8 @@
 <configuration>
     <!-- 别名 -->
     <typeAliases>
-        <package name="com.xiaoji.blog.entity"/>
+        <!--<package name="com.xiaoji.blog.entity"/>-->
+        <typeAlias type="com.xiaoji.blog.entity.Blogger" alias="Blogger" />
+        <typeAlias type="com.xiaoji.blog.entity.BlogType" alias="BlogType" />
     </typeAliases>
 </configuration>

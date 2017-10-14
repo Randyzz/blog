@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xiaoji.blog.dao.BlogTypeDao">
+    <!-- 返回结果映射 type使用mybatis-conf中的别名 可以省略包名-->
+    <resultMap id="BlogTypeResult" type="BlogType">
+        <!-- id主键字段映射-->
+        <id property="id" column="id" />
+        <!-- 普通属性映射-->
+        <result property="typeName" column="typeName"/>
+        <result property="orderNum" column="orderNum"/>
+    </resultMap>
+    <!-- id为具体实现接口中的方法名-->
+    <insert id="addBlogType" parameterType="BlogType" keyProperty="id" useGeneratedKeys="true">
+        insert into db_blog.t_blogtype
+        <!-- 动态sql拼接 prefix前缀 suffix后缀 suffixOverrides除去最后多余的,-->
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="typeName!=null and typeName!=''">
+                typeName,
+            </if>
+            <if test="orderNum!=null and orderNum!=''">
+                orderNum,
+            </if>
+        </trim>
+        <trim prefix="values(" suffix=")" suffixOverrides=",">
+            <if test="typeName!=null and typeName!=''">
+                #{typeName},
+            </if>
+            <if test="orderNum!=null and orderNum!=''">
+                #{orderNum},
+            </if>
+        </trim>
+    </insert>
+    <delete id="delBlogType" parameterType="java.lang.Integer">
+        DELETE FROM db_blog.t_blogtype where id=#{id}
+    </delete>
+    <update id="updateBlogType" parameterType="BlogType">
+        update db_blog.t_blogtype
+        <set >
+            <if test="typeName!=null and typeName!=''">
+                typeName = #{typeName},
+            </if>
+            <if test="orderNum!=null and orderNum!=''">
+                orderNum = #{orderNum},
+            </if>
+        </set>
+        WHERE id = #{id}
+    </update>
+    <select id="getById" parameterType="java.lang.Integer" resultMap="BlogTypeResult" >
+        SELECT id,typeName,orderNum from db_blog.t_blogtype
+        where id = #{id}
+    </select>
+    <select id="listByPage" resultMap="BlogTypeResult">
+        SELECT id,typeName,orderNum from db_blog.t_blogtype
+        limit #{start} ,#{end}
+    </select>
+    <select id="getTotal" resultType="java.lang.Long">
+        SELECT COUNT(id) from db_blog.t_blogtype
+    </select>
+</mapper>
