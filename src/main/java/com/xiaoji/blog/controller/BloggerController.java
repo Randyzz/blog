@@ -8,8 +8,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @RequestMapping(value="blog")
 public class BloggerController {
     @RequestMapping(value = "hello")
-    @ResponseBody
     public String hello(){
-        return "hello";
+        return "admin/index/index";
     }
 }

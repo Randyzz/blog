@@ -1,0 +1,15 @@
+<%@ page language="java" pageEncoding="UTF-8"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<c:set value="${pageContext.request.contextPath }" var="blog" />
+<%
+    String path = request.getContextPath();
+    String basePath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort()
+            + path + "/";
+    out.print(basePath);
+%>
+<link href="${pageContext.request.contextPath }/static/jquery-easyui-1.5.3/themes/color.css">
+<link href="${pageContext.request.contextPath }/static/jquery-easyui-1.5.3/themes/material/easyui.css">
+
+<script src="${pageContext.request.contextPath }/static/jquery-easyui-1.5.3/jquery.min.js"></script>
+<script src="${pageContext.request.contextPath }/static/jquery-easyui-1.5.3/jquery.easyui.min.js"></script>
+<script src="${pageContext.request.contextPath }/static/jquery-easyui-1.5.3/locale/easyui-lang-zh_CN.js"></script>
