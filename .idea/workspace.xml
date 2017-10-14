@@ -8,33 +8,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="adedf952-7119-4979-9b6c-35ab2de67c11" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_7.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/xiaoji/blog/controller/BlogTypeController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/xiaoji/blog/dao/BlogTypeDao.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/xiaoji/blog/entity/BlogType.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/xiaoji/blog/entity/PageBean.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/xiaoji/blog/service/BlogTypeService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/xiaoji/blog/service/impl/BlogTypeServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/xiaoji/blog/test/BlogTypeTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/xiaoji/blog/util/ResponseUtil.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/mapper/BlogTypeMapper.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/xiaoji/blog/controller/BloggerController.class" afterPath="$PROJECT_DIR$/target/classes/com/xiaoji/blog/controller/BloggerController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/web-blog/WEB-INF/classes/com/xiaoji/blog/controller/BloggerController.class" afterPath="$PROJECT_DIR$/target/web-blog/WEB-INF/classes/com/xiaoji/blog/controller/BloggerController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/webblog_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/webblog_war_exploded.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/xiaoji/blog/controller/BloggerController.java" afterPath="$PROJECT_DIR$/src/main/java/com/xiaoji/blog/controller/BloggerController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mybatis-conf.xml" afterPath="$PROJECT_DIR$/src/main/resources/mybatis-conf.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/admin/common/head.jspf" afterPath="$PROJECT_DIR$/src/main/webapp/admin/common/head.jspf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/admin/index/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/admin/index/index.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/mybatis-conf.xml" afterPath="$PROJECT_DIR$/target/classes/mybatis-conf.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/sql/t_blogger.sql" afterPath="$PROJECT_DIR$/target/classes/sql/t_blogger.sql" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/web-blog/WEB-INF/classes/mybatis-conf.xml" afterPath="$PROJECT_DIR$/target/web-blog/WEB-INF/classes/mybatis-conf.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/web-blog/WEB-INF/classes/sql/t_blogger.sql" afterPath="$PROJECT_DIR$/target/web-blog/WEB-INF/classes/sql/t_blogger.sql" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/web-blog/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/target/web-blog/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webblog.iml" afterPath="$PROJECT_DIR$/webblog.iml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -807,7 +788,7 @@
       <updated>1507904482456</updated>
       <workItem from="1507904491351" duration="3102000" />
       <workItem from="1507908656981" duration="4005000" />
-      <workItem from="1507951441985" duration="13746000" />
+      <workItem from="1507951441985" duration="13786000" />
     </task>
     <task id="LOCAL-00001" summary="SSM博客之easyUI后台界面搭建">
       <created>1507951994242</created>
@@ -816,7 +797,14 @@
       <option name="project" value="LOCAL" />
       <updated>1507951994242</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="SSM博客之分页查询">
+      <created>1507974480387</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1507974480387</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -852,7 +840,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20853000" />
+    <option name="totallyTimeSpent" value="20893000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -899,7 +887,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="SSM博客之easyUI后台界面搭建" />
-    <option name="LAST_COMMIT_MESSAGE" value="SSM博客之easyUI后台界面搭建" />
+    <MESSAGE value="SSM博客之分页查询" />
+    <option name="LAST_COMMIT_MESSAGE" value="SSM博客之分页查询" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
