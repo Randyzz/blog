@@ -53,7 +53,7 @@
     </select>
     <select id="listByPage" resultMap="BlogTypeResult">
         SELECT id,typeName,orderNum from db_blog.t_blogtype
-        limit #{start} ,#{end}
+        ORDER BY orderNum limit #{start} ,#{end}
     </select>
     <select id="getTotal" resultType="java.lang.Long">
         SELECT COUNT(id) from db_blog.t_blogtype

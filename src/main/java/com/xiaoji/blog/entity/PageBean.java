@@ -18,7 +18,7 @@ public class PageBean<T> implements Serializable {
         this.currentPage = currentPage;
         this.pageSize = pageSize;
         this.start = (currentPage-1)*pageSize;
-        this.end = currentPage*pageSize;
+        this.end = pageSize;
     }
 
     @Override

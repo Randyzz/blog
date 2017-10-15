@@ -55,11 +55,11 @@
             <div title="博客管理" data-options="iconCls:'icon-bkgl'" style="padding:10px;">
                 <a href="#" class="easyui-linkbutton" onclick="addTab('写博客','writeblog.jsp')"
                    data-options="plain:true,iconCls:'icon-writeblog'" style="width: 150px;">写博客</a>
-                <a href="#" class="easyui-linkbutton" onclick="addTab('博客信息管理','writeblog.jsp')"
+                <a href="#" class="easyui-linkbutton" onclick="addTab('博客信息管理','bwriteblog.jsp')"
                    data-options="plain:true,iconCls:'icon-bkgl'" style="width: 150px;">博客信息管理</a>
             </div>
             <div title="博客类别管理" data-options="iconCls:'icon-bklb'" style="padding:10px">
-                <a href="#" class="easyui-linkbutton" onclick="addTab('博客类别信息管理','blogTypeManage.jsp')"
+                <a href="#" class="easyui-linkbutton" onclick="addTab('博客类别信息管理','blogTypeManage/blogTypeManage.jsp')"
                    data-options="plain:true,iconCls:'icon-bklb'" style="width: 150px;">博客类别信息管理</a>
             </div>
             <div title="评论管理" data-options="iconCls:'icon-plgl'" style="padding:10px">

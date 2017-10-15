@@ -1,10 +1,13 @@
 package com.xiaoji.blog.entity;
 
+import org.springframework.stereotype.Component;
+
 import java.io.Serializable;
 
 /**
  * 博客类别
  */
+
 public class BlogType implements Serializable{
     private Integer id;
     private String typeName;
@@ -17,6 +20,9 @@ public class BlogType implements Serializable{
                 ", typeName='" + typeName + '\'' +
                 ", orderNum=" + orderNum +
                 '}';
+    }
+
+    public BlogType() {
     }
 
     public Integer getId() {
